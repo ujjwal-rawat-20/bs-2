@@ -1,5 +1,8 @@
 
 body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     overflow-x: hidden;
 }
 
@@ -7,10 +10,17 @@ body {
     line-height: 0.8;
 }
 
-.sideNavOne, .sideNavTwo {
+.containeOne {
+    background-image: url(../assets/shape_1.png), url(../assets/ellipse_1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 0 top 0, top 8% right 0;
+    background-size: 23% 4%, 3% 3%;
+}
+
+.sideNavOne, .sideNavTwo, .sideNavThree{
     width: 25px;
     height: 2px;
-    background-color: black;
+    background-color: #fb6818;
 }
 
 .circleOne, .circleTwo, .circleThree, .circleFour {
@@ -18,12 +28,20 @@ body {
     height: 25px;
     background-color: transparent;
     border-radius: 50%;
-    border: 2px solid black;
+    border: 3px solid black;
     margin: 0 5px;
+}
+
+.circleTwo {
+    border: 3px solid #fb6818;
 }
 
 .thirdContainer {
     background-color: #fb6818;
+}
+
+.fourthContainer .card .card-text {
+    word-break: break-all;
 }
 
 .mainHeadingPara {
@@ -162,7 +180,7 @@ body {
 .subscribeButtonContainer button {
     right: 4%;
     font-size: 12px;
-    top: 12%;
+    top: 20%;
     width: 30%;
 }
 
@@ -194,7 +212,22 @@ body {
     transform: translateY(65%);
 }
 
+.phoneIcon, .callNumber {
+    font-size: 14px;
+}
+
 @media screen and (max-width: 600px) {
+    .heading {
+        color: black !important;
+    }
+
+    .row {
+        --bs-gutter-x: 0;
+    }
+
+    .containeOne {
+        background-image: none;
+    }
     
     .ourServicesContainer {
         --bs-gutter-x: 0;
@@ -202,5 +235,39 @@ body {
 
     .ourServicesContainer .row {
             --bs-gutter-x: 0;
+    }
+
+    .mainContainerButtons {
+        padding: 4% 0;
+    }
+
+    .mainImage {
+        padding-top: 3%;
+    }
+
+    .nameDescContainer {
+        transform: translateY(0%);
+    }
+
+    .studentImageContainer {
+        position: static;
+    }
+
+    .innerstudentImageContainer {
+        position: static;
+    }
+
+    .studentsContainer {
+        text-align: center;
+        word-break: break-all;
+    }
+
+    .phoneIconNumberContainer {
+        justify-content: center;
+    }
+
+    .subscribeButtonContainer button {
+        right: 1%;
+        top: 27%;
     }
 }
