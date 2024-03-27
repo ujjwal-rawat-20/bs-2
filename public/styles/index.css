@@ -1,0 +1,206 @@
+
+body {
+    overflow-x: hidden;
+}
+
+.logo {
+    line-height: 0.8;
+}
+
+.sideNavOne, .sideNavTwo {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+}
+
+.circleOne, .circleTwo, .circleThree, .circleFour {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 0 5px;
+}
+
+.thirdContainer {
+    background-color: #fb6818;
+}
+
+.mainHeadingPara {
+    font-size: 14px;
+    line-height: 16px;
+    word-break: break-all;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.aboutUnderline {
+    width: 20%;
+    height: 5px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.fourthContainer .card {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+
+.fourthContainer .card .card-text {
+    font-size: 14px;
+}
+
+.fourthContainer .card img {
+    width: 52px;
+    height: 52px;
+}
+
+.fourthContainer .card:nth-child(1) img {
+    height: 52px;
+    width: 28px;
+}
+
+/* .fourthContainer .card:hover {
+    scale: 1.1;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+} */
+
+
+.fourthContainer .card:hover > div > .imageContainer {
+    cursor: pointer;
+    scale: 1.4;
+    transition: all 0.5s ease-out;
+}
+
+.studentImageContainer {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+    top: -42px;
+}
+
+.studentImageContainer .para,
+.studentImageContainerTwo .para 
+ {
+    font-size: 14px;
+    word-break: break-all;
+    text-align: justify;
+    width: 76%;
+}
+
+.studentImageContainerTwo {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+}
+
+
+
+.studentsContainer {
+    background-color: #1d1f1e;
+    padding-top: 10%;
+    padding-bottom: 2%;
+}
+
+.innerstudentImageContainer {
+    position: absolute;
+    top: -36px;
+    width: 100%;
+    text-align: center;
+}
+
+.innerstudentImageContainer img {
+    width: 40%;
+}
+
+.innerstudentImageContainer img {
+    border-top: 5px solid #fb6818;
+    border-bottom: 5px solid #fb6818;
+    border-left: 15px solid #fb6818;
+    border-right: 15px solid #fb6818;
+}
+
+.leftButton, .rightButton {
+    padding: 14px;
+    border-radius: 60%;
+    outline: none;
+    border: none;
+    background-color: #fb6818;;
+    margin: 0 5px;
+    padding: 15px;
+}
+
+.belowStudentsContainer {
+    height: 60px;
+}
+
+.aboveFooterContainer {
+    background-color: #fb6818;
+    padding: 10px;
+}
+
+.aboveFooterContainer input{
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 2px 5px;
+}
+
+.subscribeButton {
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #fb6818;
+    color: white;
+}
+
+.subscribeButtonContainer button {
+    right: 4%;
+    font-size: 12px;
+    top: 12%;
+    width: 30%;
+}
+
+.footerPara {
+    font-size: 14px;
+    line-height: 16px;
+    word-break: break-all;
+    text-align: justify;
+}
+
+.footer {
+    background-color: #1d1f1e;
+}
+
+.icon:nth-child(2),
+.icon:nth-child(3),
+.icon:nth-child(4) {
+    margin-left: 6px;
+}
+
+.infoContainer .para, .helpContainer .para{
+    font-size: 14px;
+    line-height: 26px;
+    word-break: break-all;
+    text-align: justify;
+}
+
+.nameDescContainer {
+    transform: translateY(65%);
+}
+
+@media screen and (max-width: 600px) {
+    
+    .ourServicesContainer {
+        --bs-gutter-x: 0;
+    }
+
+    .ourServicesContainer .row {
+            --bs-gutter-x: 0;
+    }
+}
