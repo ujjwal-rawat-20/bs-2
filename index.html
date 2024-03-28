@@ -47,7 +47,7 @@
           </nav>
 
           <div class="row pt-md-5 px-4 pt-4">
-                <div class="col-md-12">
+                <div class="col-md-12 pt-md-5">
                     <div class="row"> 
                         <div class="d-flex justify-content-center align-items-center fw-bold text-start col-1">
                           <span>02</span>
@@ -55,13 +55,14 @@
                         <div class="col-md-5">
                             <div class="fs-2">We Are Making Every</div>
                             <div class="col-md-10">
-                              <div class="fs-1 fw-bold">Child's World Better</div>
+                              <div class="fs-1 fw-bold lh-1">Child's World Better</div>
                               <div class="mainHeadingPara py-4">
                                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                  Error autem in aliquam vero qui rerum id sequi ipsa et ducimus!
+                                  Error autem in aliquam vero qui rerum id sequi ipsa et ducimus
+                                  id sequi ipsa et ducimus.
                               </div>
                             </div>
-                            <div class="mainContainerButtons d-md-block d-flex justify-content-center">
+                            <div class="mainContainerButtons py-3 d-md-block d-flex justify-content-center">
                               <button type="button" class="me-2 btn btn-outline-success">READ MORE</button>
                               <button type="button" class="me-2 btn btn-outline-primary">CONTACT US</button>
                             </div>
@@ -88,7 +89,7 @@
           </div>
 
           <div class="row">
-                <div class="text-center offset-md-2 mx-auto">OUR SERVICES</div>
+                <div class="fs-2 text-center offset-md-2 mx-auto">OUR SERVICES</div>
           </div>
 
           <div class="ourServicesContainer py-4 px-4">
@@ -275,7 +276,7 @@
           </div>
 
 
-        <div class="row px-4">
+        <div class="row fifthContainer">
           <div class="col-md-8 offset-md-2">
               <div class="text-center fs-3">
                 OUR BLOG
@@ -378,8 +379,8 @@
         </div>
 
         <div class="row aboveFooterContainer px-4">
-          <div class="col-md-8 offset-md-2">
-              <div class="row text-light">
+          <div class="">
+              <div class="row text-light d-flex justify-content-center align-items-center">
                 <div class="phoneIconNumberContainer d-flex justify-content-center
                  justify-content-md-between align-items-center col-md-3 py-2">
                   <div class="phoneIcon">
@@ -395,7 +396,10 @@
                 </div>
                 <div class="col-md-6 position-relative subscribeButtonContainer py-2">
                   <input placeholder="Enter Your email" >
-                      <button class="subscribeButton position-absolute">SUBSCRIBE</button>
+                      <!-- <button class="subscribeButton position-absolute">SUBSCRIBE</button> -->
+                      <button type="button" class="subscribeButton position-absolute" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        subscribe
+                    </button>
                   </input>
                 </div>
               </div>
@@ -404,7 +408,7 @@
         </div>
 
         <div class="row footer px-4">
-          <div class="col-md-8 offset-md-2">
+          <div class="col-lg-8 offset-lg-2">
             <div class="row">
               <div class="col-md-6 py-5">
                 <div class="logo d-flex flex-column justify-content-center pb-3 text-light">
@@ -454,6 +458,67 @@
 
     </div>
 
-    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Enter your details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <!-- Thankyou for subscribing to our newsletter..! -->
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">State</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Sign in</button>
+                </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+      </div>
+      </div>
+  </div>
+
 </body>
 </html>

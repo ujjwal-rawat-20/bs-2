@@ -67,6 +67,7 @@ body {
 
 .fourthContainer .card .card-text {
     font-size: 14px;
+    word-break: break-all;
 }
 
 .fourthContainer .card img {
@@ -178,9 +179,9 @@ body {
 }
 
 .subscribeButtonContainer button {
-    right: 4%;
+    right: 3%;
     font-size: 12px;
-    top: 20%;
+    top: 28%;
     width: 30%;
 }
 
@@ -228,6 +229,10 @@ body {
     .containeOne {
         background-image: none;
     }
+
+    .fifthContainer {
+        padding: 0 1.5rem;
+    }
     
     .ourServicesContainer {
         --bs-gutter-x: 0;
@@ -269,5 +274,28 @@ body {
     .subscribeButtonContainer button {
         right: 1%;
         top: 27%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .imageContainer {
+        width: 52% !important;
+    }
+
+    .innerstudentImageContainer {
+        position: absolute;
+        top: -23px;
+    }
+
+    .nameDescContainer {
+        transform: translateY(34%);
+    }
+
+    .subscribeButtonContainer button {
+        top: 26%;
     }
 }
